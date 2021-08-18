@@ -1,7 +1,7 @@
 # Voice Command Recognition Firmware
 ***
 
-This folder contains the firmware for the voice-controlled robot.
+This folder contains the firmware for the Speech word detection.
 
 We are using Platform.io to build the firmware.
 
@@ -9,19 +9,21 @@ To understand the code the best place to start is `src/main.cpp`. This creates o
 
 From there you can look at `src/CommandDetector.cpp` and `src/CommandProcessor.cpp`.
 
+To configure dusplay connections you can edit the SDA and SCL pin constants in `Display.h`.
+
 The code should be well commented and hopefully easy to understand.
 
 ## Config options
 
-To set things up for yourself, edit the `config.h` file and fill in your WiFi details.
-
 There are a number of options in this file that you can modify to suit your own setup.
+
 
 If you want to use an analog microphone instead of I2S then you need to comment out this line:
 
 ```
-// are you using an I2S microphone - comment this out if you want to use an analog mic and ADC input
+are you using an I2S microphone - comment this out if you want to use an analog mic and ADC input
 #define USE_I2S_MIC_INPUT
+I have used an `MEMS` I2S mic. So, it is uncommented.
 ```
 
 And you will need to select the appropriate ADC channel to read data from:
