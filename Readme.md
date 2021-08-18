@@ -23,7 +23,7 @@ The code takes audio input through SPH0645 Microphone and tries to detect detect
 Jupyter notebooks for creating a TensorFlow Lite model for "speech word" recognition.
 A pre-trained `converted_model.tflite` model and a compressed `model.cc` has been generated and also added to the ESP32 firmware folder.
 
-For trainning dataset [this](http://download.tensorflow.org/data/speech_commands_v0.01.tar.gz) dataset is used. (`16KH mono`)
+For trainning [this](http://download.tensorflow.org/data/speech_commands_v0.01.tar.gz) dataset is used. (`16KH mono`)
 
 ## Testing Video on [Youtube](https://www.youtube.com/watch?v=F7vG49up-y4)
 [![DemoVideo](https://img.youtube.com/vi/F7vG49up-y4/0.jpg)](https://www.youtube.com/watch?v=F7vG49up-y4)
