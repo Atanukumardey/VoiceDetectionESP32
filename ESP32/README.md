@@ -1,6 +1,6 @@
-# Voice Command Recognition Firmware
+# Speech-Word Detection Firmware
+### Majority of the documentation is done by [atomic14](https://github.com/atomic14)
 ***
-
 This folder contains the firmware for the Speech word detection.
 
 We are using Platform.io to build the firmware.
@@ -9,7 +9,7 @@ To understand the code the best place to start is `src/main.cpp`. This creates o
 
 From there you can look at `src/CommandDetector.cpp` and `src/CommandProcessor.cpp`.
 
-To configure dusplay connections you can edit the SDA and SCL pin constants in `Display.h`.
+To configure display connections you can edit the SDA and SCL pin constants in `Display.h`.
 
 The code should be well commented and hopefully easy to understand.
 
@@ -23,7 +23,7 @@ If you want to use an analog microphone instead of I2S then you need to comment 
 ```
 are you using an I2S microphone - comment this out if you want to use an analog mic and ADC input
 #define USE_I2S_MIC_INPUT
-I have used an `MEMS` I2S mic. So, it is uncommented.
+I have used an MEMS I2S mic. So, it is uncommented.
 ```
 
 And you will need to select the appropriate ADC channel to read data from:
