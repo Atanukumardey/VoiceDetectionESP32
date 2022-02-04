@@ -3,9 +3,10 @@
 ***
 For circuit design I have used these components:
 
-    1. I2S OLED Display
-    2. SPH0645 (I2S) MEMS microphone
-    3. 1000uF capacitor
+    1. ESP32
+    2. I2S OLED Display
+    3. SPH0645 (I2S) MEMS microphone
+    4. 1000uF capacitor
 
 ![Circuit Diagram](Circuit/ESP32_Speech_Command_bb.png)
 
